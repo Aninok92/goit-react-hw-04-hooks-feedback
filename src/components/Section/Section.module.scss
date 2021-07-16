@@ -1,0 +1,15 @@
+.section {
+  width: 500px;
+  margin: 0 auto 10px;
+  border: 1px solid var(--black-color);
+  padding: 20px;
+  background: var(--linear-gradient);
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  color: var(--primary-text-color);
+  margin: 15px 0;
+  text-align: center;
+}

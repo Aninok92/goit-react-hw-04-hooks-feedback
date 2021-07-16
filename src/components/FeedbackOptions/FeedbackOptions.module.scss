@@ -1,0 +1,47 @@
+@import "styles/shared.module.scss";
+@import "styles/button.module.scss";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.feedbackButton {
+  @extend .button;
+  &:not(:last-child) {
+    margin-right: 15px;
+  }
+}
+
+.good {
+  background-color: var(--green-color);
+  &:hover {
+    background: var(--yellow-green-color);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--dark-green-color);
+  }
+}
+
+.neutral {
+  background-color: var(--gray);
+  &:hover {
+    background: var(--light-gray);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--dark-gray);
+  }
+}
+
+.bad {
+  background-color: var(--red);
+  &:hover {
+    background: var(--light-red);
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--dark-red);
+  }
+}

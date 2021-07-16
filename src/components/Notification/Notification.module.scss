@@ -1,0 +1,9 @@
+@import "styles/shared.module.scss";
+
+.notification {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+  margin: 15px;
+  text-align: center;
+}
