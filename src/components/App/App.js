@@ -45,7 +45,7 @@ function App() {
             neutral={neutral}
             bad={bad}
             total={totalFeedback}
-            positivePercentage={(good / totalFeedback) * 100}
+            positivePercentage={((good / totalFeedback) * 100).toFixed()}
           />
         ) : (
           <Notification message={"No feedback given"} />
